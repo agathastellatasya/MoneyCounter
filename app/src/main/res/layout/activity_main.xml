@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.veren.android.moneycounter.MainActivity">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total"
+        android:textSize="75sp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="CLEAR"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/row100k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp100.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input100k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count100k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row50k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row100k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp50.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input50k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count50k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row20k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row50k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp20.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input20k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count20k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row10k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row20k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp10.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input10k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count10k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row5k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row10k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp5.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input5k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count5k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row5k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp2.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input2k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count2k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row1k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row2k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp1.000"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input1k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count1k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1k">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp500"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row500">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp200"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row200">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rp100"
+                    android:textSize="@dimen/money_text" />
+
+                <EditText
+                    android:id="@+id/input100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="@dimen/money_text" />
+
+                <TextView
+                    android:id="@+id/count100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Rp0"
+                    android:textSize="@dimen/money_text" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
